@@ -28,3 +28,18 @@ E:\Devpoint\CV National Security\Adya.CV\Adya.CV.Web\bin\EntityFramework.xml
 E:\Devpoint\CV National Security\Adya.CV\Adya.CV.Web\obj\Debug\Adya.CV.Web.dll
 E:\Devpoint\CV National Security\Adya.CV\Adya.CV.Web\obj\Debug\Adya.CV.Web.xml
 E:\Devpoint\CV National Security\Adya.CV\Adya.CV.Web\obj\Debug\Adya.CV.Web.pdb
+E:\Devpoint\Adya.CV\Adya.CV.Web\bin\Adya.CV.Web.dll.config
+E:\Devpoint\Adya.CV\Adya.CV.Web\bin\Adya.CV.Web.dll
+E:\Devpoint\Adya.CV\Adya.CV.Web\bin\Adya.CV.Web.pdb
+E:\Devpoint\Adya.CV\Adya.CV.Web\bin\Adya.CV.Web.xml
+E:\Devpoint\Adya.CV\Adya.CV.Web\bin\Adya.CV.Modelo.dll
+E:\Devpoint\Adya.CV\Adya.CV.Web\bin\EntityFramework.dll
+E:\Devpoint\Adya.CV\Adya.CV.Web\bin\Adya.CV.Modelo.pdb
+E:\Devpoint\Adya.CV\Adya.CV.Web\bin\Adya.CV.Modelo.xml
+E:\Devpoint\Adya.CV\Adya.CV.Web\bin\EntityFramework.xml
+E:\Devpoint\Adya.CV\Adya.CV.Web\obj\Debug\Adya.CV.Web.vbprojResolveAssemblyReference.cache
+E:\Devpoint\Adya.CV\Adya.CV.Web\obj\Debug\Adya.CV.Web.Resources.resources
+E:\Devpoint\Adya.CV\Adya.CV.Web\obj\Debug\Adya.CV.Web.vbproj.GenerateResource.Cache
+E:\Devpoint\Adya.CV\Adya.CV.Web\obj\Debug\Adya.CV.Web.dll
+E:\Devpoint\Adya.CV\Adya.CV.Web\obj\Debug\Adya.CV.Web.xml
+E:\Devpoint\Adya.CV\Adya.CV.Web\obj\Debug\Adya.CV.Web.pdb

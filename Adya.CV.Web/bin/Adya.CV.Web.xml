@@ -6,7 +6,7 @@ Adya.CV.Web
 </name>
 </assembly>
 <members>
-<member name="F:Adya.CV.Web.TallasView.lkb_buscar">
+<member name="F:Adya.CV.Web.ProfesionesView.lkb_buscar">
 	<summary>
 lkb_buscar control.
 </summary>
@@ -14,7 +14,7 @@ lkb_buscar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.lkb_agregar">
+</member><member name="F:Adya.CV.Web.ProfesionesView.lkb_agregar">
 	<summary>
 lkb_agregar control.
 </summary>
@@ -22,7 +22,7 @@ lkb_agregar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.lkb_guardar">
+</member><member name="F:Adya.CV.Web.ProfesionesView.lkb_guardar">
 	<summary>
 lkb_guardar control.
 </summary>
@@ -30,7 +30,7 @@ lkb_guardar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.lkb_eliminar">
+</member><member name="F:Adya.CV.Web.ProfesionesView.lkb_eliminar">
 	<summary>
 lkb_eliminar control.
 </summary>
@@ -38,7 +38,7 @@ lkb_eliminar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.lkb_salir">
+</member><member name="F:Adya.CV.Web.ProfesionesView.lkb_salir">
 	<summary>
 lkb_salir control.
 </summary>
@@ -46,7 +46,7 @@ lkb_salir control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.pnl_form">
+</member><member name="F:Adya.CV.Web.ProfesionesView.pnl_form">
 	<summary>
 pnl_form control.
 </summary>
@@ -54,7 +54,7 @@ pnl_form control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.lbl_nombres">
+</member><member name="F:Adya.CV.Web.ProfesionesView.lbl_nombres">
 	<summary>
 lbl_nombres control.
 </summary>
@@ -62,7 +62,7 @@ lbl_nombres control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.txt_nombres">
+</member><member name="F:Adya.CV.Web.ProfesionesView.txt_nombres">
 	<summary>
 txt_nombres control.
 </summary>
@@ -70,7 +70,7 @@ txt_nombres control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.pnl_list">
+</member><member name="F:Adya.CV.Web.ProfesionesView.pnl_list">
 	<summary>
 pnl_list control.
 </summary>
@@ -78,7 +78,7 @@ pnl_list control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.pnl_buscar">
+</member><member name="F:Adya.CV.Web.ProfesionesView.pnl_buscar">
 	<summary>
 pnl_buscar control.
 </summary>
@@ -86,7 +86,7 @@ pnl_buscar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.ddl_buscar">
+</member><member name="F:Adya.CV.Web.ProfesionesView.ddl_buscar">
 	<summary>
 ddl_buscar control.
 </summary>
@@ -94,7 +94,7 @@ ddl_buscar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.txt_bucar">
+</member><member name="F:Adya.CV.Web.ProfesionesView.txt_bucar">
 	<summary>
 txt_bucar control.
 </summary>
@@ -102,7 +102,7 @@ txt_bucar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.btn_filtrar">
+</member><member name="F:Adya.CV.Web.ProfesionesView.btn_filtrar">
 	<summary>
 btn_filtrar control.
 </summary>
@@ -110,23 +110,23 @@ btn_filtrar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.grd_Tallas">
+</member><member name="F:Adya.CV.Web.ProfesionesView.grd_Profesiones">
 	<summary>
-grd_Tallas control.
+grd_Profesiones control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.sds_Tallas">
+</member><member name="F:Adya.CV.Web.ProfesionesView.sds_Profesiones">
 	<summary>
-sds_Tallas control.
+sds_Profesiones control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Adya.CV.Web.TallasView.hdf_id">
+</member><member name="F:Adya.CV.Web.ProfesionesView.hdf_id">
 	<summary>
 hdf_id control.
 </summary>
@@ -134,13 +134,189 @@ hdf_id control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="P:Adya.CV.Web.TallasView.Master">
+</member><member name="P:Adya.CV.Web.ProfesionesView.Master">
 	<summary>
 Master property.
 </summary>
 	<remarks>
 Auto-generated property.
 </remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_buscar">
+	<summary>
+lkb_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_agregar">
+	<summary>
+lkb_agregar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_guardar">
+	<summary>
+lkb_guardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_eliminar">
+	<summary>
+lkb_eliminar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_salir">
+	<summary>
+lkb_salir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.pnl_form">
+	<summary>
+pnl_form control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.lbl_fecha">
+	<summary>
+lbl_fecha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.txt_nombres">
+	<summary>
+txt_nombres control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.lbl_codigo">
+	<summary>
+lbl_codigo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.txt_codigo">
+	<summary>
+txt_codigo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.pnl_list">
+	<summary>
+pnl_list control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.pnl_buscar">
+	<summary>
+pnl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.ddl_buscar">
+	<summary>
+ddl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.txt_bucar">
+	<summary>
+txt_bucar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.btn_filtrar">
+	<summary>
+btn_filtrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.grd_HojadeVidas">
+	<summary>
+grd_HojadeVidas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.sds_HojadeVidas">
+	<summary>
+sds_HojadeVidas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.HojadeVidasView.hdf_id">
+	<summary>
+hdf_id control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Adya.CV.Web.HojadeVidasView.Master">
+	<summary>
+Master property.
+</summary>
+	<remarks>
+Auto-generated property.
+</remarks>
+</member><member name="P:Adya.CV.Web.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:Adya.CV.Web.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:Adya.CV.Web.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:Adya.CV.Web.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:Adya.CV.Web.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:Adya.CV.Web.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
 </member><member name="F:Adya.CV.Web.UsuariosView.lkb_buscar">
 	<summary>
 lkb_buscar control.
@@ -468,6 +644,697 @@ Master property.
 	<remarks>
 Auto-generated property.
 </remarks>
+</member><member name="F:Adya.CV.Web.IndexView.img_logo">
+	<summary>
+img_logo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Adya.CV.Web.IndexView.Master">
+	<summary>
+Master property.
+</summary>
+	<remarks>
+Auto-generated property.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.lkb_buscar">
+	<summary>
+lkb_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.lkb_agregar">
+	<summary>
+lkb_agregar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.lkb_guardar">
+	<summary>
+lkb_guardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.lkb_eliminar">
+	<summary>
+lkb_eliminar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.lkb_salir">
+	<summary>
+lkb_salir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.pnl_form">
+	<summary>
+pnl_form control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.lbl_nombres">
+	<summary>
+lbl_nombres control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.txt_nombres">
+	<summary>
+txt_nombres control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.pnl_list">
+	<summary>
+pnl_list control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.pnl_buscar">
+	<summary>
+pnl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.ddl_buscar">
+	<summary>
+ddl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.txt_bucar">
+	<summary>
+txt_bucar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.btn_filtrar">
+	<summary>
+btn_filtrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.grd_Areas">
+	<summary>
+grd_Areas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.sds_Areas">
+	<summary>
+sds_Areas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.AreasView.hdf_id">
+	<summary>
+hdf_id control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Adya.CV.Web.AreasView.Master">
+	<summary>
+Master property.
+</summary>
+	<remarks>
+Auto-generated property.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.lkb_buscar">
+	<summary>
+lkb_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.lkb_agregar">
+	<summary>
+lkb_agregar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.lkb_guardar">
+	<summary>
+lkb_guardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.lkb_eliminar">
+	<summary>
+lkb_eliminar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.lkb_salir">
+	<summary>
+lkb_salir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.pnl_form">
+	<summary>
+pnl_form control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.lbl_nombres">
+	<summary>
+lbl_nombres control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.txt_nombres">
+	<summary>
+txt_nombres control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.pnl_list">
+	<summary>
+pnl_list control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.pnl_buscar">
+	<summary>
+pnl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.ddl_buscar">
+	<summary>
+ddl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.txt_bucar">
+	<summary>
+txt_bucar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.btn_filtrar">
+	<summary>
+btn_filtrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.grd_Tallas">
+	<summary>
+grd_Tallas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.sds_Tallas">
+	<summary>
+sds_Tallas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.TallasView.hdf_id">
+	<summary>
+hdf_id control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Adya.CV.Web.TallasView.Master">
+	<summary>
+Master property.
+</summary>
+	<remarks>
+Auto-generated property.
+</remarks>
+</member><member name="F:Adya.CV.Web._Plantilla.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web._Plantilla.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web._Plantilla.udp_base">
+	<summary>
+udp_base control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web._Plantilla.cph_botones">
+	<summary>
+cph_botones control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web._Plantilla.mainNav">
+	<summary>
+mainNav control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web._Plantilla.lkb_cerrarsesion">
+	<summary>
+lkb_cerrarsesion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web._Plantilla.div_mensajes">
+	<summary>
+div_mensajes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web._Plantilla.cph_contenido">
+	<summary>
+cph_contenido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web._Plantilla.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.lkb_buscar">
+	<summary>
+lkb_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.lkb_agregar">
+	<summary>
+lkb_agregar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.lkb_guardar">
+	<summary>
+lkb_guardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.lkb_eliminar">
+	<summary>
+lkb_eliminar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.lkb_salir">
+	<summary>
+lkb_salir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.pnl_form">
+	<summary>
+pnl_form control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.lbl_nombres">
+	<summary>
+lbl_nombres control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.txt_nombres">
+	<summary>
+txt_nombres control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.pnl_list">
+	<summary>
+pnl_list control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.pnl_buscar">
+	<summary>
+pnl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.ddl_buscar">
+	<summary>
+ddl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.txt_bucar">
+	<summary>
+txt_bucar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.btn_filtrar">
+	<summary>
+btn_filtrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.grd_Ciudades">
+	<summary>
+grd_Ciudades control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.sds_Ciudades">
+	<summary>
+sds_Ciudades control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CiudadesView.hdf_id">
+	<summary>
+hdf_id control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Adya.CV.Web.CiudadesView.Master">
+	<summary>
+Master property.
+</summary>
+	<remarks>
+Auto-generated property.
+</remarks>
+</member><member name="F:Adya.CV.Web.Login.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.Login.txt_usuario">
+	<summary>
+txt_usuario control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.Login.btn_ingresar">
+	<summary>
+btn_ingresar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.Login.txt_contrasena">
+	<summary>
+txt_contrasena control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.Login.div_error">
+	<summary>
+div_error control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.Login.btn_cerrarerror">
+	<summary>
+btn_cerrarerror control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.lkb_buscar">
+	<summary>
+lkb_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.lkb_agregar">
+	<summary>
+lkb_agregar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.lkb_guardar">
+	<summary>
+lkb_guardar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.lkb_eliminar">
+	<summary>
+lkb_eliminar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.lkb_salir">
+	<summary>
+lkb_salir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.pnl_form">
+	<summary>
+pnl_form control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.lbl_cargo">
+	<summary>
+lbl_cargo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.txt_nombres">
+	<summary>
+txt_nombres control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.lbl_codigo">
+	<summary>
+lbl_codigo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.txt_codigo">
+	<summary>
+txt_codigo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.pnl_list">
+	<summary>
+pnl_list control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.pnl_buscar">
+	<summary>
+pnl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.ddl_buscar">
+	<summary>
+ddl_buscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.txt_bucar">
+	<summary>
+txt_bucar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.btn_filtrar">
+	<summary>
+btn_filtrar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.grd_Cargos">
+	<summary>
+grd_Cargos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.sds_Cargos">
+	<summary>
+sds_Cargos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Adya.CV.Web.CargosView.hdf_id">
+	<summary>
+hdf_id control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Adya.CV.Web.CargosView.Master">
+	<summary>
+Master property.
+</summary>
+	<remarks>
+Auto-generated property.
+</remarks>
 </member><member name="F:Adya.CV.Web.ActividadesView.lkb_buscar">
 	<summary>
 lkb_buscar control.
@@ -732,873 +1599,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="P:Adya.CV.Web.NacionalidadesView.Master">
-	<summary>
-Master property.
-</summary>
-	<remarks>
-Auto-generated property.
-</remarks>
-</member><member name="F:Adya.CV.Web._Plantilla.head">
-	<summary>
-head control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web._Plantilla.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web._Plantilla.udp_base">
-	<summary>
-udp_base control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web._Plantilla.cph_botones">
-	<summary>
-cph_botones control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web._Plantilla.mainNav">
-	<summary>
-mainNav control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web._Plantilla.lkb_cerrarsesion">
-	<summary>
-lkb_cerrarsesion control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web._Plantilla.div_mensajes">
-	<summary>
-div_mensajes control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web._Plantilla.cph_contenido">
-	<summary>
-cph_contenido control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web._Plantilla.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.lkb_buscar">
-	<summary>
-lkb_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.lkb_agregar">
-	<summary>
-lkb_agregar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.lkb_guardar">
-	<summary>
-lkb_guardar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.lkb_eliminar">
-	<summary>
-lkb_eliminar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.lkb_salir">
-	<summary>
-lkb_salir control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.pnl_form">
-	<summary>
-pnl_form control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.lbl_nombres">
-	<summary>
-lbl_nombres control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.txt_nombres">
-	<summary>
-txt_nombres control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.pnl_list">
-	<summary>
-pnl_list control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.pnl_buscar">
-	<summary>
-pnl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.ddl_buscar">
-	<summary>
-ddl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.txt_bucar">
-	<summary>
-txt_bucar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.btn_filtrar">
-	<summary>
-btn_filtrar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.grd_Ciudades">
-	<summary>
-grd_Ciudades control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.sds_Ciudades">
-	<summary>
-sds_Ciudades control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CiudadesView.hdf_id">
-	<summary>
-hdf_id control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:Adya.CV.Web.CiudadesView.Master">
-	<summary>
-Master property.
-</summary>
-	<remarks>
-Auto-generated property.
-</remarks>
-</member><member name="F:Adya.CV.Web.Login.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.Login.txt_usuario">
-	<summary>
-txt_usuario control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.Login.btn_ingresar">
-	<summary>
-btn_ingresar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.Login.txt_contrasena">
-	<summary>
-txt_contrasena control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.Login.div_error">
-	<summary>
-div_error control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.Login.btn_cerrarerror">
-	<summary>
-btn_cerrarerror control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:Adya.CV.Web.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:Adya.CV.Web.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:Adya.CV.Web.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:Adya.CV.Web.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:Adya.CV.Web.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="T:Adya.CV.Web.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_buscar">
-	<summary>
-lkb_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_agregar">
-	<summary>
-lkb_agregar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_guardar">
-	<summary>
-lkb_guardar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_eliminar">
-	<summary>
-lkb_eliminar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.lkb_salir">
-	<summary>
-lkb_salir control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.pnl_form">
-	<summary>
-pnl_form control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.lbl_fecha">
-	<summary>
-lbl_fecha control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.txt_nombres">
-	<summary>
-txt_nombres control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.lbl_codigo">
-	<summary>
-lbl_codigo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.txt_codigo">
-	<summary>
-txt_codigo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.pnl_list">
-	<summary>
-pnl_list control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.pnl_buscar">
-	<summary>
-pnl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.ddl_buscar">
-	<summary>
-ddl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.txt_bucar">
-	<summary>
-txt_bucar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.btn_filtrar">
-	<summary>
-btn_filtrar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.grd_HojadeVidas">
-	<summary>
-grd_HojadeVidas control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.sds_HojadeVidas">
-	<summary>
-sds_HojadeVidas control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.HojadeVidasView.hdf_id">
-	<summary>
-hdf_id control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:Adya.CV.Web.HojadeVidasView.Master">
-	<summary>
-Master property.
-</summary>
-	<remarks>
-Auto-generated property.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.lkb_buscar">
-	<summary>
-lkb_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.lkb_agregar">
-	<summary>
-lkb_agregar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.lkb_guardar">
-	<summary>
-lkb_guardar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.lkb_eliminar">
-	<summary>
-lkb_eliminar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.lkb_salir">
-	<summary>
-lkb_salir control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.pnl_form">
-	<summary>
-pnl_form control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.lbl_nombres">
-	<summary>
-lbl_nombres control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.txt_nombres">
-	<summary>
-txt_nombres control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.pnl_list">
-	<summary>
-pnl_list control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.pnl_buscar">
-	<summary>
-pnl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.ddl_buscar">
-	<summary>
-ddl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.txt_bucar">
-	<summary>
-txt_bucar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.btn_filtrar">
-	<summary>
-btn_filtrar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.grd_Profesiones">
-	<summary>
-grd_Profesiones control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.sds_Profesiones">
-	<summary>
-sds_Profesiones control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.ProfesionesView.hdf_id">
-	<summary>
-hdf_id control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:Adya.CV.Web.ProfesionesView.Master">
-	<summary>
-Master property.
-</summary>
-	<remarks>
-Auto-generated property.
-</remarks>
-</member><member name="F:Adya.CV.Web.IndexView.img_logo">
-	<summary>
-img_logo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:Adya.CV.Web.IndexView.Master">
-	<summary>
-Master property.
-</summary>
-	<remarks>
-Auto-generated property.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.lkb_buscar">
-	<summary>
-lkb_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.lkb_agregar">
-	<summary>
-lkb_agregar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.lkb_guardar">
-	<summary>
-lkb_guardar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.lkb_eliminar">
-	<summary>
-lkb_eliminar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.lkb_salir">
-	<summary>
-lkb_salir control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.pnl_form">
-	<summary>
-pnl_form control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.lbl_nombres">
-	<summary>
-lbl_nombres control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.txt_nombres">
-	<summary>
-txt_nombres control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.pnl_list">
-	<summary>
-pnl_list control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.pnl_buscar">
-	<summary>
-pnl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.ddl_buscar">
-	<summary>
-ddl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.txt_bucar">
-	<summary>
-txt_bucar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.btn_filtrar">
-	<summary>
-btn_filtrar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.grd_Areas">
-	<summary>
-grd_Areas control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.sds_Areas">
-	<summary>
-sds_Areas control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.AreasView.hdf_id">
-	<summary>
-hdf_id control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:Adya.CV.Web.AreasView.Master">
-	<summary>
-Master property.
-</summary>
-	<remarks>
-Auto-generated property.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.lkb_buscar">
-	<summary>
-lkb_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.lkb_agregar">
-	<summary>
-lkb_agregar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.lkb_guardar">
-	<summary>
-lkb_guardar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.lkb_eliminar">
-	<summary>
-lkb_eliminar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.lkb_salir">
-	<summary>
-lkb_salir control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.pnl_form">
-	<summary>
-pnl_form control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.lbl_cargo">
-	<summary>
-lbl_cargo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.txt_nombres">
-	<summary>
-txt_nombres control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.lbl_codigo">
-	<summary>
-lbl_codigo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.txt_codigo">
-	<summary>
-txt_codigo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.pnl_list">
-	<summary>
-pnl_list control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.pnl_buscar">
-	<summary>
-pnl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.ddl_buscar">
-	<summary>
-ddl_buscar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.txt_bucar">
-	<summary>
-txt_bucar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.btn_filtrar">
-	<summary>
-btn_filtrar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.grd_Cargos">
-	<summary>
-grd_Cargos control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.sds_Cargos">
-	<summary>
-sds_Cargos control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Adya.CV.Web.CargosView.hdf_id">
-	<summary>
-hdf_id control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:Adya.CV.Web.CargosView.Master">
 	<summary>
 Master property.
 </summary>
