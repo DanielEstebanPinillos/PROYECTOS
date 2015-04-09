@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Actividades">
+    <Key>
+      <PropertyRef Name="ActividadId" />
+    </Key>
+    <Property Name="ActividadId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ActividadesxHojadeVida" Relationship="Self.FK_ActividadesxHojadeVida_Actividades" FromRole="Actividades" ToRole="ActividadesxHojadeVida" />
+  </EntityType>
+  <EntityType Name="ActividadesxHojadeVida">
+    <Key>
+      <PropertyRef Name="ActividadxHojadeVida" />
+    </Key>
+    <Property Name="ActividadxHojadeVida" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HojadeVidaFk" Type="Int32" Nullable="false" />
+    <Property Name="ActividadFk" Type="Int32" Nullable="false" />
+    <Property Name="Valor" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Actividades" Relationship="Self.FK_ActividadesxHojadeVida_Actividades" FromRole="ActividadesxHojadeVida" ToRole="Actividades" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_ActividadesxHojadeVida_HojadeVidas" FromRole="ActividadesxHojadeVida" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="Areas">
+    <Key>
+      <PropertyRef Name="AreaId" />
+    </Key>
+    <Property Name="AreaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AreasxHojadeVida" Relationship="Self.FK_AreasxHojadeVida_Areas" FromRole="Areas" ToRole="AreasxHojadeVida" />
+  </EntityType>
+  <EntityType Name="AreasxHojadeVida">
+    <Key>
+      <PropertyRef Name="AreaxHojadeVidaId" />
+    </Key>
+    <Property Name="AreaxHojadeVidaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HojadeVidaFk" Type="Int32" Nullable="false" />
+    <Property Name="AreaFk" Type="Int32" Nullable="false" />
+    <Property Name="Valor" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Areas" Relationship="Self.FK_AreasxHojadeVida_Areas" FromRole="AreasxHojadeVida" ToRole="Areas" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_AreasxHojadeVida_HojadeVidas" FromRole="AreasxHojadeVida" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="Cargos">
+    <Key>
+      <PropertyRef Name="CargoId" />
+    </Key>
+    <Property Name="CargoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ExperienciaLaborales" Relationship="Self.FK_ExperienciaLaborales_Cargos" FromRole="Cargos" ToRole="ExperienciaLaborales" />
+    <NavigationProperty Name="ExperienciaLaborales1" Relationship="Self.FK_ExperienciaLaborales_JefeCargos" FromRole="Cargos" ToRole="ExperienciaLaborales" />
+    <NavigationProperty Name="InformacionFamiliares" Relationship="Self.FK_InformacionFamiliares_Cargos" FromRole="Cargos" ToRole="InformacionFamiliares" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_HojadeVidas_Cargos" FromRole="Cargos" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="Ciudades">
+    <Key>
+      <PropertyRef Name="CiudadId" />
+    </Key>
+    <Property Name="CiudadId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Educaciones" Relationship="Self.FK_Educaciones_Ciudades" FromRole="Ciudades" ToRole="Educaciones" />
+    <NavigationProperty Name="InformacionFamiliares" Relationship="Self.FK_InformacionFamiliares_Ciudades" FromRole="Ciudades" ToRole="InformacionFamiliares" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_HojadeVidas_Ciudades" FromRole="Ciudades" ToRole="HojadeVidas" />
+    <NavigationProperty Name="HojadeVidas1" Relationship="CVModel.FK_HojadeVidas_ExpedicionCiudades" FromRole="Ciudades" ToRole="HojadeVidas" />
+    <NavigationProperty Name="HojadeVidas2" Relationship="CVModel.FK_HojadeVidas_VividoCiudades" FromRole="Ciudades" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="Conocimientos">
+    <Key>
+      <PropertyRef Name="ConocimientoId" />
+    </Key>
+    <Property Name="ConocimientoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HojadeVidaFk" Type="Int32" Nullable="false" />
+    <Property Name="Tipo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SistemasNivel" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="InglesLectura" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="InglesEscucha" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="InglesHablado" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_Conocimientos_HojadeVidas" FromRole="Conocimientos" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="Educaciones">
+    <Key>
+      <PropertyRef Name="EducacionId" />
+    </Key>
+    <Property Name="EducacionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HojadeVidaFk" Type="Int32" Nullable="false" />
+    <Property Name="Estudio" Type="Int32" Nullable="false" />
+    <Property Name="AnoFin" Type="Int32" Nullable="false" />
+    <Property Name="Titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Institucion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CiudadFk" Type="Int32" Nullable="false" />
+    <Property Name="TiempoCursado" Type="Int32" Nullable="false" />
+    <Property Name="TipoTiempo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Ciudades" Relationship="Self.FK_Educaciones_Ciudades" FromRole="Educaciones" ToRole="Ciudades" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_Educaciones_HojadeVidas" FromRole="Educaciones" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="EstudioActuales">
+    <Key>
+      <PropertyRef Name="EducacionId" />
+    </Key>
+    <Property Name="EducacionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HojadeVidaFk" Type="Int32" Nullable="false" />
+    <Property Name="Estudio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TiempoCurso" Type="Int32" Nullable="false" />
+    <Property Name="TipoTiempo" Type="Int32" Nullable="false" />
+    <Property Name="Institucion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Horaria" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_EstudioActuales_HojadeVidas" FromRole="EstudioActuales" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="ExperienciaLaborales">
+    <Key>
+      <PropertyRef Name="ExperienciaLaboralId" />
+    </Key>
+    <Property Name="ExperienciaLaboralId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HojadeVidaFk" Type="Int32" Nullable="false" />
+    <Property Name="Empresa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="JefeCargoFk" Type="Int32" Nullable="false" />
+    <Property Name="JefeInmediato" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ingreso" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Retiro" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TiempoServicio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SueldoInicial" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+    <Property Name="SueldoFinal" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+    <Property Name="CargoFk" Type="Int32" Nullable="false" />
+    <Property Name="Funciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Logros" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TipoContrato" Type="Int32" Nullable="false" />
+    <Property Name="HorarioTrabajo" Type="Int32" Nullable="false" />
+    <Property Name="Jornada" Type="Int32" Nullable="false" />
+    <Property Name="MotivoRetiro" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cargos" Relationship="Self.FK_ExperienciaLaborales_Cargos" FromRole="ExperienciaLaborales" ToRole="Cargos" />
+    <NavigationProperty Name="Cargos1" Relationship="Self.FK_ExperienciaLaborales_JefeCargos" FromRole="ExperienciaLaborales" ToRole="Cargos" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_ExperienciaLaborales_HojadeVidas" FromRole="ExperienciaLaborales" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="InformacionFamiliares">
+    <Key>
+      <PropertyRef Name="InformacionFamiliarId" />
+    </Key>
+    <Property Name="InformacionFamiliarId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HojadeVidaFk" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProfesionFk" Type="Int32" Nullable="false" />
+    <Property Name="Empresa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CargoFk" Type="Int32" />
+    <Property Name="Direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CiudadFk" Type="Int32" Nullable="false" />
+    <Property Name="Edad" Type="Int32" Nullable="false" />
+    <Property Name="Parentesco" Type="Int32" Nullable="false" />
+    <Property Name="OtroParentesco" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cargos" Relationship="Self.FK_InformacionFamiliares_Cargos" FromRole="InformacionFamiliares" ToRole="Cargos" />
+    <NavigationProperty Name="Ciudades" Relationship="Self.FK_InformacionFamiliares_Ciudades" FromRole="InformacionFamiliares" ToRole="Ciudades" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_InformacionFamiliares_HojadeVidas" FromRole="InformacionFamiliares" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="Nacionalidades">
+    <Key>
+      <PropertyRef Name="NacionalidadId" />
+    </Key>
+    <Property Name="NacionalidadId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_HojadeVidas_Nacionalidades" FromRole="Nacionalidades" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="Profesiones">
+    <Key>
+      <PropertyRef Name="ProfesionId" />
+    </Key>
+    <Property Name="ProfesionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_HojadeVidas_Profesiones" FromRole="Profesiones" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="ReferenciaPersonales">
+    <Key>
+      <PropertyRef Name="ReferenciaPersonalId" />
+    </Key>
+    <Property Name="ReferenciaPersonalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HojadeVidaFk" Type="Int32" Nullable="false" />
+    <Property Name="Familiar" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CargoFk" Type="Int32" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_ReferenciaPersonales_HojadeVidas" FromRole="ReferenciaPersonales" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="SeguridadesSociales">
+    <Key>
+      <PropertyRef Name="SeguridadSocialId" />
+    </Key>
+    <Property Name="SeguridadSocialId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HojadeVidaFk" Type="Int32" Nullable="false" />
+    <Property Name="Eps" Type="Boolean" Nullable="false" />
+    <Property Name="NombreEPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaEPS" Type="DateTime" Precision="0" />
+    <Property Name="TipoAfilidado" Type="Boolean" />
+    <Property Name="Pensiones" Type="Boolean" Nullable="false" />
+    <Property Name="NombrePEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaPEN" Type="DateTime" Precision="0" />
+    <Property Name="Cesantias" Type="Boolean" Nullable="false" />
+    <Property Name="NombreCES" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaCES" Type="DateTime" Precision="0" />
+    <Property Name="Valor" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="HojadeVidas" Relationship="CVModel.FK_SeguridadesSociales_HojadeVidas" FromRole="SeguridadesSociales" ToRole="HojadeVidas" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="UsuarioId" />
+    </Key>
+    <Property Name="UsuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Contrasena" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Administrador" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Apellido" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="MenusxUsuario" Relationship="CVModel.FK_MenusxUsuario_Usuarios" FromRole="Usuarios" ToRole="MenusxUsuario" />
+  </EntityType>
+  <Association Name="FK_ActividadesxHojadeVida_Actividades">
+    <End Role="Actividades" Type="Self.Actividades" Multiplicity="1" />
+    <End Role="ActividadesxHojadeVida" Type="Self.ActividadesxHojadeVida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Actividades">
+        <PropertyRef Name="ActividadId" />
+      </Principal>
+      <Dependent Role="ActividadesxHojadeVida">
+        <PropertyRef Name="ActividadFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AreasxHojadeVida_Areas">
+    <End Role="Areas" Type="Self.Areas" Multiplicity="1" />
+    <End Role="AreasxHojadeVida" Type="Self.AreasxHojadeVida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Areas">
+        <PropertyRef Name="AreaId" />
+      </Principal>
+      <Dependent Role="AreasxHojadeVida">
+        <PropertyRef Name="AreaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExperienciaLaborales_Cargos">
+    <End Role="Cargos" Type="Self.Cargos" Multiplicity="1" />
+    <End Role="ExperienciaLaborales" Type="Self.ExperienciaLaborales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargos">
+        <PropertyRef Name="CargoId" />
+      </Principal>
+      <Dependent Role="ExperienciaLaborales">
+        <PropertyRef Name="CargoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExperienciaLaborales_JefeCargos">
+    <End Role="Cargos" Type="Self.Cargos" Multiplicity="1" />
+    <End Role="ExperienciaLaborales" Type="Self.ExperienciaLaborales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargos">
+        <PropertyRef Name="CargoId" />
+      </Principal>
+      <Dependent Role="ExperienciaLaborales">
+        <PropertyRef Name="JefeCargoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformacionFamiliares_Cargos">
+    <End Role="Cargos" Type="Self.Cargos" Multiplicity="0..1" />
+    <End Role="InformacionFamiliares" Type="Self.InformacionFamiliares" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargos">
+        <PropertyRef Name="CargoId" />
+      </Principal>
+      <Dependent Role="InformacionFamiliares">
+        <PropertyRef Name="CargoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Educaciones_Ciudades">
+    <End Role="Ciudades" Type="Self.Ciudades" Multiplicity="1" />
+    <End Role="Educaciones" Type="Self.Educaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudades">
+        <PropertyRef Name="CiudadId" />
+      </Principal>
+      <Dependent Role="Educaciones">
+        <PropertyRef Name="CiudadFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformacionFamiliares_Ciudades">
+    <End Role="Ciudades" Type="Self.Ciudades" Multiplicity="1" />
+    <End Role="InformacionFamiliares" Type="Self.InformacionFamiliares" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudades">
+        <PropertyRef Name="CiudadId" />
+      </Principal>
+      <Dependent Role="InformacionFamiliares">
+        <PropertyRef Name="CiudadFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CVEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Actividades" EntityType="Self.Actividades" />
+    <EntitySet Name="ActividadesxHojadeVida" EntityType="Self.ActividadesxHojadeVida" />
+    <EntitySet Name="Areas" EntityType="Self.Areas" />
+    <EntitySet Name="AreasxHojadeVida" EntityType="Self.AreasxHojadeVida" />
+    <EntitySet Name="Cargos" EntityType="Self.Cargos" />
+    <EntitySet Name="Ciudades" EntityType="Self.Ciudades" />
+    <EntitySet Name="Conocimientos" EntityType="Self.Conocimientos" />
+    <EntitySet Name="Educaciones" EntityType="Self.Educaciones" />
+    <EntitySet Name="EstudioActuales" EntityType="Self.EstudioActuales" />
+    <EntitySet Name="ExperienciaLaborales" EntityType="Self.ExperienciaLaborales" />
+    <EntitySet Name="InformacionFamiliares" EntityType="Self.InformacionFamiliares" />
+    <EntitySet Name="Nacionalidades" EntityType="Self.Nacionalidades" />
+    <EntitySet Name="Profesiones" EntityType="Self.Profesiones" />
+    <EntitySet Name="ReferenciaPersonales" EntityType="Self.ReferenciaPersonales" />
+    <EntitySet Name="SeguridadesSociales" EntityType="Self.SeguridadesSociales" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <AssociationSet Name="FK_ActividadesxHojadeVida_Actividades" Association="Self.FK_ActividadesxHojadeVida_Actividades">
+      <End Role="Actividades" EntitySet="Actividades" />
+      <End Role="ActividadesxHojadeVida" EntitySet="ActividadesxHojadeVida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AreasxHojadeVida_Areas" Association="Self.FK_AreasxHojadeVida_Areas">
+      <End Role="Areas" EntitySet="Areas" />
+      <End Role="AreasxHojadeVida" EntitySet="AreasxHojadeVida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExperienciaLaborales_Cargos" Association="Self.FK_ExperienciaLaborales_Cargos">
+      <End Role="Cargos" EntitySet="Cargos" />
+      <End Role="ExperienciaLaborales" EntitySet="ExperienciaLaborales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExperienciaLaborales_JefeCargos" Association="Self.FK_ExperienciaLaborales_JefeCargos">
+      <End Role="Cargos" EntitySet="Cargos" />
+      <End Role="ExperienciaLaborales" EntitySet="ExperienciaLaborales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformacionFamiliares_Cargos" Association="Self.FK_InformacionFamiliares_Cargos">
+      <End Role="Cargos" EntitySet="Cargos" />
+      <End Role="InformacionFamiliares" EntitySet="InformacionFamiliares" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Educaciones_Ciudades" Association="Self.FK_Educaciones_Ciudades">
+      <End Role="Ciudades" EntitySet="Ciudades" />
+      <End Role="Educaciones" EntitySet="Educaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformacionFamiliares_Ciudades" Association="Self.FK_InformacionFamiliares_Ciudades">
+      <End Role="Ciudades" EntitySet="Ciudades" />
+      <End Role="InformacionFamiliares" EntitySet="InformacionFamiliares" />
+    </AssociationSet>
+    <EntitySet Name="MenusxUsuario" EntityType="CVModel.MenusxUsuario" />
+    <AssociationSet Name="FK_MenusxUsuario_Usuarios" Association="CVModel.FK_MenusxUsuario_Usuarios">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="MenusxUsuario" EntitySet="MenusxUsuario" />
+    </AssociationSet>
+    <EntitySet Name="Menus" EntityType="CVModel.Menus" />
+    <AssociationSet Name="FK_MenusxUsuario_Menus" Association="CVModel.FK_MenusxUsuario_Menus">
+      <End Role="Menus" EntitySet="Menus" />
+      <End Role="MenusxUsuario" EntitySet="MenusxUsuario" />
+    </AssociationSet>
+    <EntitySet Name="HojadeVidas" EntityType="CVModel.HojadeVidas" />
+    <AssociationSet Name="FK_ActividadesxHojadeVida_HojadeVidas" Association="CVModel.FK_ActividadesxHojadeVida_HojadeVidas">
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+      <End Role="ActividadesxHojadeVida" EntitySet="ActividadesxHojadeVida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AreasxHojadeVida_HojadeVidas" Association="CVModel.FK_AreasxHojadeVida_HojadeVidas">
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+      <End Role="AreasxHojadeVida" EntitySet="AreasxHojadeVida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HojadeVidas_Cargos" Association="CVModel.FK_HojadeVidas_Cargos">
+      <End Role="Cargos" EntitySet="Cargos" />
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HojadeVidas_Ciudades" Association="CVModel.FK_HojadeVidas_Ciudades">
+      <End Role="Ciudades" EntitySet="Ciudades" />
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HojadeVidas_ExpedicionCiudades" Association="CVModel.FK_HojadeVidas_ExpedicionCiudades">
+      <End Role="Ciudades" EntitySet="Ciudades" />
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HojadeVidas_VividoCiudades" Association="CVModel.FK_HojadeVidas_VividoCiudades">
+      <End Role="Ciudades" EntitySet="Ciudades" />
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Conocimientos_HojadeVidas" Association="CVModel.FK_Conocimientos_HojadeVidas">
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+      <End Role="Conocimientos" EntitySet="Conocimientos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Educaciones_HojadeVidas" Association="CVModel.FK_Educaciones_HojadeVidas">
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+      <End Role="Educaciones" EntitySet="Educaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EstudioActuales_HojadeVidas" Association="CVModel.FK_EstudioActuales_HojadeVidas">
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+      <End Role="EstudioActuales" EntitySet="EstudioActuales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExperienciaLaborales_HojadeVidas" Association="CVModel.FK_ExperienciaLaborales_HojadeVidas">
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+      <End Role="ExperienciaLaborales" EntitySet="ExperienciaLaborales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HojadeVidas_Nacionalidades" Association="CVModel.FK_HojadeVidas_Nacionalidades">
+      <End Role="Nacionalidades" EntitySet="Nacionalidades" />
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HojadeVidas_Profesiones" Association="CVModel.FK_HojadeVidas_Profesiones">
+      <End Role="Profesiones" EntitySet="Profesiones" />
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformacionFamiliares_HojadeVidas" Association="CVModel.FK_InformacionFamiliares_HojadeVidas">
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+      <End Role="InformacionFamiliares" EntitySet="InformacionFamiliares" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReferenciaPersonales_HojadeVidas" Association="CVModel.FK_ReferenciaPersonales_HojadeVidas">
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+      <End Role="ReferenciaPersonales" EntitySet="ReferenciaPersonales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SeguridadesSociales_HojadeVidas" Association="CVModel.FK_SeguridadesSociales_HojadeVidas">
+      <End Role="HojadeVidas" EntitySet="HojadeVidas" />
+      <End Role="SeguridadesSociales" EntitySet="SeguridadesSociales" />
+    </AssociationSet>
+    <EntitySet Name="DetalleIngresos" EntityType="CVModel.DetalleIngresos" />
+    <EntitySet Name="Empleados" EntityType="CVModel.Empleados" />
+    <EntitySet Name="Ingresos" EntityType="CVModel.Ingresos" />
+    <EntitySet Name="Productos" EntityType="CVModel.Productos" />
+    <EntitySet Name="ProductosxEmpleados" EntityType="CVModel.ProductosxEmpleados" />
+    <EntitySet Name="ProductosxTallas" EntityType="CVModel.ProductosxTallas" />
+    <EntitySet Name="Proveedores" EntityType="CVModel.Proveedores" />
+    <EntitySet Name="Tallas" EntityType="CVModel.Tallas" />
+    <EntitySet Name="TallasxEmpleados" EntityType="CVModel.TallasxEmpleados" />
+    <AssociationSet Name="FK_DetalleIngresos_Ingresos" Association="CVModel.FK_DetalleIngresos_Ingresos">
+      <End Role="Ingresos" EntitySet="Ingresos" />
+      <End Role="DetalleIngresos" EntitySet="DetalleIngresos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleIngresos_Productos" Association="CVModel.FK_DetalleIngresos_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="DetalleIngresos" EntitySet="DetalleIngresos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleIngresos_Tallas" Association="CVModel.FK_DetalleIngresos_Tallas">
+      <End Role="Tallas" EntitySet="Tallas" />
+      <End Role="DetalleIngresos" EntitySet="DetalleIngresos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductosxEmpleados_Empleados" Association="CVModel.FK_ProductosxEmpleados_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="ProductosxEmpleados" EntitySet="ProductosxEmpleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TallasxEmpleados_Empleados" Association="CVModel.FK_TallasxEmpleados_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="ProductosxEmpleados" EntitySet="ProductosxEmpleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ingresos_Proveedores" Association="CVModel.FK_Ingresos_Proveedores">
+      <End Role="Proveedores" EntitySet="Proveedores" />
+      <End Role="Ingresos" EntitySet="Ingresos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductosxTallas_Productos" Association="CVModel.FK_ProductosxTallas_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="ProductosxTallas" EntitySet="ProductosxTallas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TallasxEmpleados_Productos" Association="CVModel.FK_TallasxEmpleados_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="TallasxEmpleados" EntitySet="TallasxEmpleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductosxEmpleados_ProductosxTallas" Association="CVModel.FK_ProductosxEmpleados_ProductosxTallas">
+      <End Role="ProductosxTallas" EntitySet="ProductosxTallas" />
+      <End Role="ProductosxEmpleados" EntitySet="ProductosxEmpleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductosxTallas_Tallas" Association="CVModel.FK_ProductosxTallas_Tallas">
+      <End Role="Tallas" EntitySet="Tallas" />
+      <End Role="ProductosxTallas" EntitySet="ProductosxTallas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TallasxEmpleados_Tallas" Association="CVModel.FK_TallasxEmpleados_Tallas">
+      <End Role="Tallas" EntitySet="Tallas" />
+      <End Role="TallasxEmpleados" EntitySet="TallasxEmpleados" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="Menu">
+    <Property Type="String" Name="Nombre" Nullable="false" />
+    <Property Type="Boolean" Name="Valor" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="MenusxUsuario">
+    <Key>
+      <PropertyRef Name="MenuxUsuarioId" />
+    </Key>
+    <Property Name="MenuxUsuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioFk" Type="Int32" Nullable="false" />
+    <Property Name="Valor" Type="Boolean" Nullable="false" />
+    <Property Name="MenuFk" Type="Int32" />
+    <NavigationProperty Name="Usuarios" Relationship="CVModel.FK_MenusxUsuario_Usuarios" FromRole="MenusxUsuario" ToRole="Usuarios" />
+    <NavigationProperty Name="Menus" Relationship="CVModel.FK_MenusxUsuario_Menus" FromRole="MenusxUsuario" ToRole="Menus" />
+  </EntityType>
+  <Association Name="FK_MenusxUsuario_Usuarios">
+    <End Type="CVModel.Usuarios" Role="Usuarios" Multiplicity="1" />
+    <End Type="CVModel.MenusxUsuario" Role="MenusxUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="UsuarioId" />
+      </Principal>
+      <Dependent Role="MenusxUsuario">
+        <PropertyRef Name="UsuarioFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Menus">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ruta" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Texto" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="MenusxUsuario" Relationship="CVModel.FK_MenusxUsuario_Menus" FromRole="Menus" ToRole="MenusxUsuario" />
+  </EntityType>
+  <Association Name="FK_MenusxUsuario_Menus">
+    <End Type="CVModel.Menus" Role="Menus" Multiplicity="0..1" />
+    <End Type="CVModel.MenusxUsuario" Role="MenusxUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menus">
+        <PropertyRef Name="MenuId" />
+      </Principal>
+      <Dependent Role="MenusxUsuario">
+        <PropertyRef Name="MenuFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HojadeVidas">
+    <Key>
+      <PropertyRef Name="HojadeVidaId" />
+    </Key>
+    <Property Name="HojadeVidaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CargoFk" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="Int32" Nullable="false" />
+    <Property Name="Apellidos" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Nombres" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Direccion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Celular" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CiudadFk" Type="Int32" Nullable="false" />
+    <Property Name="NacionalidadFk" Type="Int32" Nullable="false" />
+    <Property Name="ProfesionFk" Type="Int32" Nullable="false" />
+    <Property Name="EstadoCivil" Type="Int32" Nullable="false" />
+    <Property Name="AnosExperiencia" Type="Int32" Nullable="false" />
+    <Property Name="MesesExperiencia" Type="Int32" Nullable="false" />
+    <Property Name="TipoDocumento" Type="Int32" Nullable="false" />
+    <Property Name="NumeroIdentificacion" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ExpedicionCiudadFk" Type="Int32" Nullable="false" />
+    <Property Name="LibretaMilitar" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Distrito" Type="Int32" Nullable="false" />
+    <Property Name="Clase" Type="Int32" Nullable="false" />
+    <Property Name="TarjetaProfesional" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Vehiculo" Type="Boolean" Nullable="false" />
+    <Property Name="LicenciaConduccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Categoria" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="TrabajaActualmente" Type="Boolean" Nullable="false" />
+    <Property Name="Empresa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Independiente" Type="Boolean" />
+    <Property Name="TipoContrato" Type="Int32" />
+    <Property Name="TrabajoAntesEstaEmpresa" Type="Boolean" Nullable="false" />
+    <Property Name="SolicitoAntesEstaEmpresa" Type="Boolean" Nullable="false" />
+    <Property Name="SolicitoAntesFechaEstaEmpresa" Type="Boolean" />
+    <Property Name="Recomendado" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Dependencia" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ConocioVacante" Type="Int32" Nullable="false" />
+    <Property Name="ConocioOtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VividoCiudadFk" Type="Int32" Nullable="false" />
+    <Property Name="TrabajarOtraCiudad" Type="Boolean" Nullable="false" />
+    <Property Name="ViveCasa" Type="Int32" Nullable="false" />
+    <Property Name="NombreArrendador" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TelefonoArreandador" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="AnosResidencia" Type="Int32" Nullable="false" />
+    <Property Name="MesesResidencia" Type="Int32" Nullable="false" />
+    <Property Name="IngresoAdicional" Type="Boolean" Nullable="false" />
+    <Property Name="DescripcionIngresoAdicional" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ValorIngresoAdicional" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="ValorObligacionMensual" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="ConceptoObligacionMensual" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AspiracionSalarial" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="PrincipalesAficiones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Deportes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Menciones" Type="Boolean" Nullable="false" />
+    <Property Name="DescripcionMenciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Asociacion" Type="Boolean" Nullable="false" />
+    <Property Name="DescripcionAsociacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Objetivo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroPersonasDependen" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ActividadesxHojadeVida" Relationship="CVModel.FK_ActividadesxHojadeVida_HojadeVidas" FromRole="HojadeVidas" ToRole="ActividadesxHojadeVida" />
+    <NavigationProperty Name="AreasxHojadeVida" Relationship="CVModel.FK_AreasxHojadeVida_HojadeVidas" FromRole="HojadeVidas" ToRole="AreasxHojadeVida" />
+    <NavigationProperty Name="Cargos" Relationship="CVModel.FK_HojadeVidas_Cargos" FromRole="HojadeVidas" ToRole="Cargos" />
+    <NavigationProperty Name="Ciudades" Relationship="CVModel.FK_HojadeVidas_Ciudades" FromRole="HojadeVidas" ToRole="Ciudades" />
+    <NavigationProperty Name="Ciudades1" Relationship="CVModel.FK_HojadeVidas_ExpedicionCiudades" FromRole="HojadeVidas" ToRole="Ciudades" />
+    <NavigationProperty Name="Ciudades2" Relationship="CVModel.FK_HojadeVidas_VividoCiudades" FromRole="HojadeVidas" ToRole="Ciudades" />
+    <NavigationProperty Name="Conocimientos" Relationship="CVModel.FK_Conocimientos_HojadeVidas" FromRole="HojadeVidas" ToRole="Conocimientos" />
+    <NavigationProperty Name="Educaciones" Relationship="CVModel.FK_Educaciones_HojadeVidas" FromRole="HojadeVidas" ToRole="Educaciones" />
+    <NavigationProperty Name="EstudioActuales" Relationship="CVModel.FK_EstudioActuales_HojadeVidas" FromRole="HojadeVidas" ToRole="EstudioActuales" />
+    <NavigationProperty Name="ExperienciaLaborales" Relationship="CVModel.FK_ExperienciaLaborales_HojadeVidas" FromRole="HojadeVidas" ToRole="ExperienciaLaborales" />
+    <NavigationProperty Name="Nacionalidades" Relationship="CVModel.FK_HojadeVidas_Nacionalidades" FromRole="HojadeVidas" ToRole="Nacionalidades" />
+    <NavigationProperty Name="Profesiones" Relationship="CVModel.FK_HojadeVidas_Profesiones" FromRole="HojadeVidas" ToRole="Profesiones" />
+    <NavigationProperty Name="InformacionFamiliares" Relationship="CVModel.FK_InformacionFamiliares_HojadeVidas" FromRole="HojadeVidas" ToRole="InformacionFamiliares" />
+    <NavigationProperty Name="ReferenciaPersonales" Relationship="CVModel.FK_ReferenciaPersonales_HojadeVidas" FromRole="HojadeVidas" ToRole="ReferenciaPersonales" />
+    <NavigationProperty Name="SeguridadesSociales" Relationship="CVModel.FK_SeguridadesSociales_HojadeVidas" FromRole="HojadeVidas" ToRole="SeguridadesSociales" />
+  </EntityType>
+  <Association Name="FK_ActividadesxHojadeVida_HojadeVidas">
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="1" />
+    <End Type="CVModel.ActividadesxHojadeVida" Role="ActividadesxHojadeVida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HojadeVidas">
+        <PropertyRef Name="HojadeVidaId" />
+      </Principal>
+      <Dependent Role="ActividadesxHojadeVida">
+        <PropertyRef Name="HojadeVidaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AreasxHojadeVida_HojadeVidas">
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="1" />
+    <End Type="CVModel.AreasxHojadeVida" Role="AreasxHojadeVida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HojadeVidas">
+        <PropertyRef Name="HojadeVidaId" />
+      </Principal>
+      <Dependent Role="AreasxHojadeVida">
+        <PropertyRef Name="HojadeVidaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HojadeVidas_Cargos">
+    <End Type="CVModel.Cargos" Role="Cargos" Multiplicity="1" />
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargos">
+        <PropertyRef Name="CargoId" />
+      </Principal>
+      <Dependent Role="HojadeVidas">
+        <PropertyRef Name="CargoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HojadeVidas_Ciudades">
+    <End Type="CVModel.Ciudades" Role="Ciudades" Multiplicity="1" />
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudades">
+        <PropertyRef Name="CiudadId" />
+      </Principal>
+      <Dependent Role="HojadeVidas">
+        <PropertyRef Name="CiudadFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HojadeVidas_ExpedicionCiudades">
+    <End Type="CVModel.Ciudades" Role="Ciudades" Multiplicity="1" />
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudades">
+        <PropertyRef Name="CiudadId" />
+      </Principal>
+      <Dependent Role="HojadeVidas">
+        <PropertyRef Name="ExpedicionCiudadFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HojadeVidas_VividoCiudades">
+    <End Type="CVModel.Ciudades" Role="Ciudades" Multiplicity="1" />
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudades">
+        <PropertyRef Name="CiudadId" />
+      </Principal>
+      <Dependent Role="HojadeVidas">
+        <PropertyRef Name="VividoCiudadFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Conocimientos_HojadeVidas">
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="1" />
+    <End Type="CVModel.Conocimientos" Role="Conocimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HojadeVidas">
+        <PropertyRef Name="HojadeVidaId" />
+      </Principal>
+      <Dependent Role="Conocimientos">
+        <PropertyRef Name="HojadeVidaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Educaciones_HojadeVidas">
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="1" />
+    <End Type="CVModel.Educaciones" Role="Educaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HojadeVidas">
+        <PropertyRef Name="HojadeVidaId" />
+      </Principal>
+      <Dependent Role="Educaciones">
+        <PropertyRef Name="HojadeVidaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EstudioActuales_HojadeVidas">
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="1" />
+    <End Type="CVModel.EstudioActuales" Role="EstudioActuales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HojadeVidas">
+        <PropertyRef Name="HojadeVidaId" />
+      </Principal>
+      <Dependent Role="EstudioActuales">
+        <PropertyRef Name="HojadeVidaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExperienciaLaborales_HojadeVidas">
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="1" />
+    <End Type="CVModel.ExperienciaLaborales" Role="ExperienciaLaborales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HojadeVidas">
+        <PropertyRef Name="HojadeVidaId" />
+      </Principal>
+      <Dependent Role="ExperienciaLaborales">
+        <PropertyRef Name="HojadeVidaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HojadeVidas_Nacionalidades">
+    <End Type="CVModel.Nacionalidades" Role="Nacionalidades" Multiplicity="1" />
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nacionalidades">
+        <PropertyRef Name="NacionalidadId" />
+      </Principal>
+      <Dependent Role="HojadeVidas">
+        <PropertyRef Name="NacionalidadFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HojadeVidas_Profesiones">
+    <End Type="CVModel.Profesiones" Role="Profesiones" Multiplicity="1" />
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profesiones">
+        <PropertyRef Name="ProfesionId" />
+      </Principal>
+      <Dependent Role="HojadeVidas">
+        <PropertyRef Name="ProfesionFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformacionFamiliares_HojadeVidas">
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="1" />
+    <End Type="CVModel.InformacionFamiliares" Role="InformacionFamiliares" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HojadeVidas">
+        <PropertyRef Name="HojadeVidaId" />
+      </Principal>
+      <Dependent Role="InformacionFamiliares">
+        <PropertyRef Name="HojadeVidaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReferenciaPersonales_HojadeVidas">
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="1" />
+    <End Type="CVModel.ReferenciaPersonales" Role="ReferenciaPersonales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HojadeVidas">
+        <PropertyRef Name="HojadeVidaId" />
+      </Principal>
+      <Dependent Role="ReferenciaPersonales">
+        <PropertyRef Name="HojadeVidaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SeguridadesSociales_HojadeVidas">
+    <End Type="CVModel.HojadeVidas" Role="HojadeVidas" Multiplicity="1" />
+    <End Type="CVModel.SeguridadesSociales" Role="SeguridadesSociales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HojadeVidas">
+        <PropertyRef Name="HojadeVidaId" />
+      </Principal>
+      <Dependent Role="SeguridadesSociales">
+        <PropertyRef Name="HojadeVidaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DetalleIngresos">
+    <Key>
+      <PropertyRef Name="DetalleIngresoId" />
+    </Key>
+    <Property Name="DetalleIngresoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IngresoFk" Type="Int32" Nullable="false" />
+    <Property Name="ProductoFk" Type="Int32" Nullable="false" />
+    <Property Name="TallaFk" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Ingresos" Relationship="CVModel.FK_DetalleIngresos_Ingresos" FromRole="DetalleIngresos" ToRole="Ingresos" />
+    <NavigationProperty Name="Productos" Relationship="CVModel.FK_DetalleIngresos_Productos" FromRole="DetalleIngresos" ToRole="Productos" />
+    <NavigationProperty Name="Tallas" Relationship="CVModel.FK_DetalleIngresos_Tallas" FromRole="DetalleIngresos" ToRole="Tallas" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="EmpleadoId" />
+    </Key>
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Apellido" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroIdentificacion" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="ProductosxEmpleados" Relationship="CVModel.FK_ProductosxEmpleados_Empleados" FromRole="Empleados" ToRole="ProductosxEmpleados" />
+    <NavigationProperty Name="ProductosxEmpleados1" Relationship="CVModel.FK_TallasxEmpleados_Empleados" FromRole="Empleados" ToRole="ProductosxEmpleados" />
+  </EntityType>
+  <EntityType Name="Ingresos">
+    <Key>
+      <PropertyRef Name="IngresoId" />
+    </Key>
+    <Property Name="IngresoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ProveedorFk" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DetalleIngresos" Relationship="CVModel.FK_DetalleIngresos_Ingresos" FromRole="Ingresos" ToRole="DetalleIngresos" />
+    <NavigationProperty Name="Proveedores" Relationship="CVModel.FK_Ingresos_Proveedores" FromRole="Ingresos" ToRole="Proveedores" />
+  </EntityType>
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="ProductoId" />
+    </Key>
+    <Property Name="ProductoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CantidadActual" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DetalleIngresos" Relationship="CVModel.FK_DetalleIngresos_Productos" FromRole="Productos" ToRole="DetalleIngresos" />
+    <NavigationProperty Name="ProductosxTallas" Relationship="CVModel.FK_ProductosxTallas_Productos" FromRole="Productos" ToRole="ProductosxTallas" />
+    <NavigationProperty Name="TallasxEmpleados" Relationship="CVModel.FK_TallasxEmpleados_Productos" FromRole="Productos" ToRole="TallasxEmpleados" />
+  </EntityType>
+  <EntityType Name="ProductosxEmpleados">
+    <Key>
+      <PropertyRef Name="ProductoxEmpleadoId" />
+    </Key>
+    <Property Name="ProductoxEmpleadoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpleadoFk" Type="Int32" Nullable="false" />
+    <Property Name="ProductoxTallaFk" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Tipo" Type="Int32" Nullable="false" />
+    <Property Name="TipoDevolucion" Type="Int32" />
+    <NavigationProperty Name="Empleados" Relationship="CVModel.FK_ProductosxEmpleados_Empleados" FromRole="ProductosxEmpleados" ToRole="Empleados" />
+    <NavigationProperty Name="Empleados1" Relationship="CVModel.FK_TallasxEmpleados_Empleados" FromRole="ProductosxEmpleados" ToRole="Empleados" />
+    <NavigationProperty Name="ProductosxTallas" Relationship="CVModel.FK_ProductosxEmpleados_ProductosxTallas" FromRole="ProductosxEmpleados" ToRole="ProductosxTallas" />
+  </EntityType>
+  <EntityType Name="ProductosxTallas">
+    <Key>
+      <PropertyRef Name="ProductoxTallaId" />
+    </Key>
+    <Property Name="ProductoxTallaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductoFk" Type="Int32" Nullable="false" />
+    <Property Name="TallaFk" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Productos" Relationship="CVModel.FK_ProductosxTallas_Productos" FromRole="ProductosxTallas" ToRole="Productos" />
+    <NavigationProperty Name="ProductosxEmpleados" Relationship="CVModel.FK_ProductosxEmpleados_ProductosxTallas" FromRole="ProductosxTallas" ToRole="ProductosxEmpleados" />
+    <NavigationProperty Name="Tallas" Relationship="CVModel.FK_ProductosxTallas_Tallas" FromRole="ProductosxTallas" ToRole="Tallas" />
+  </EntityType>
+  <EntityType Name="Proveedores">
+    <Key>
+      <PropertyRef Name="ProveedorId" />
+    </Key>
+    <Property Name="ProveedorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroIdentificacion" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Direccion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Ingresos" Relationship="CVModel.FK_Ingresos_Proveedores" FromRole="Proveedores" ToRole="Ingresos" />
+  </EntityType>
+  <EntityType Name="Tallas">
+    <Key>
+      <PropertyRef Name="TallaId" />
+    </Key>
+    <Property Name="TallaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DetalleIngresos" Relationship="CVModel.FK_DetalleIngresos_Tallas" FromRole="Tallas" ToRole="DetalleIngresos" />
+    <NavigationProperty Name="ProductosxTallas" Relationship="CVModel.FK_ProductosxTallas_Tallas" FromRole="Tallas" ToRole="ProductosxTallas" />
+    <NavigationProperty Name="TallasxEmpleados" Relationship="CVModel.FK_TallasxEmpleados_Tallas" FromRole="Tallas" ToRole="TallasxEmpleados" />
+  </EntityType>
+  <EntityType Name="TallasxEmpleados">
+    <Key>
+      <PropertyRef Name="TallaxEmpleadoId" />
+    </Key>
+    <Property Name="TallaxEmpleadoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpleadoFk" Type="Int32" Nullable="false" />
+    <Property Name="ProductoFk" Type="Int32" Nullable="false" />
+    <Property Name="TallaFk" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Productos" Relationship="CVModel.FK_TallasxEmpleados_Productos" FromRole="TallasxEmpleados" ToRole="Productos" />
+    <NavigationProperty Name="Tallas" Relationship="CVModel.FK_TallasxEmpleados_Tallas" FromRole="TallasxEmpleados" ToRole="Tallas" />
+  </EntityType>
+  <Association Name="FK_DetalleIngresos_Ingresos">
+    <End Type="CVModel.Ingresos" Role="Ingresos" Multiplicity="1" />
+    <End Type="CVModel.DetalleIngresos" Role="DetalleIngresos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ingresos">
+        <PropertyRef Name="IngresoId" />
+      </Principal>
+      <Dependent Role="DetalleIngresos">
+        <PropertyRef Name="IngresoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleIngresos_Productos">
+    <End Type="CVModel.Productos" Role="Productos" Multiplicity="1" />
+    <End Type="CVModel.DetalleIngresos" Role="DetalleIngresos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="ProductoId" />
+      </Principal>
+      <Dependent Role="DetalleIngresos">
+        <PropertyRef Name="ProductoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleIngresos_Tallas">
+    <End Type="CVModel.Tallas" Role="Tallas" Multiplicity="1" />
+    <End Type="CVModel.DetalleIngresos" Role="DetalleIngresos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tallas">
+        <PropertyRef Name="TallaId" />
+      </Principal>
+      <Dependent Role="DetalleIngresos">
+        <PropertyRef Name="TallaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductosxEmpleados_Empleados">
+    <End Type="CVModel.Empleados" Role="Empleados" Multiplicity="1" />
+    <End Type="CVModel.ProductosxEmpleados" Role="ProductosxEmpleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="ProductosxEmpleados">
+        <PropertyRef Name="EmpleadoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TallasxEmpleados_Empleados">
+    <End Type="CVModel.Empleados" Role="Empleados" Multiplicity="1" />
+    <End Type="CVModel.ProductosxEmpleados" Role="ProductosxEmpleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="ProductosxEmpleados">
+        <PropertyRef Name="EmpleadoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ingresos_Proveedores">
+    <End Type="CVModel.Proveedores" Role="Proveedores" Multiplicity="1" />
+    <End Type="CVModel.Ingresos" Role="Ingresos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedores">
+        <PropertyRef Name="ProveedorId" />
+      </Principal>
+      <Dependent Role="Ingresos">
+        <PropertyRef Name="ProveedorFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductosxTallas_Productos">
+    <End Type="CVModel.Productos" Role="Productos" Multiplicity="1" />
+    <End Type="CVModel.ProductosxTallas" Role="ProductosxTallas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="ProductoId" />
+      </Principal>
+      <Dependent Role="ProductosxTallas">
+        <PropertyRef Name="ProductoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TallasxEmpleados_Productos">
+    <End Type="CVModel.Productos" Role="Productos" Multiplicity="1" />
+    <End Type="CVModel.TallasxEmpleados" Role="TallasxEmpleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="ProductoId" />
+      </Principal>
+      <Dependent Role="TallasxEmpleados">
+        <PropertyRef Name="ProductoFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductosxEmpleados_ProductosxTallas">
+    <End Type="CVModel.ProductosxTallas" Role="ProductosxTallas" Multiplicity="1" />
+    <End Type="CVModel.ProductosxEmpleados" Role="ProductosxEmpleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductosxTallas">
+        <PropertyRef Name="ProductoxTallaId" />
+      </Principal>
+      <Dependent Role="ProductosxEmpleados">
+        <PropertyRef Name="ProductoxTallaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductosxTallas_Tallas">
+    <End Type="CVModel.Tallas" Role="Tallas" Multiplicity="1" />
+    <End Type="CVModel.ProductosxTallas" Role="ProductosxTallas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tallas">
+        <PropertyRef Name="TallaId" />
+      </Principal>
+      <Dependent Role="ProductosxTallas">
+        <PropertyRef Name="TallaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TallasxEmpleados_Tallas">
+    <End Type="CVModel.Tallas" Role="Tallas" Multiplicity="1" />
+    <End Type="CVModel.TallasxEmpleados" Role="TallasxEmpleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tallas">
+        <PropertyRef Name="TallaId" />
+      </Principal>
+      <Dependent Role="TallasxEmpleados">
+        <PropertyRef Name="TallaFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

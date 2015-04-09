@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E7A81FC-DCCB-4936-B872-F05DCA4EACDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Adya.CV.Modelo</RootNamespace>
+    <AssemblyName>Adya.CV.Modelo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Adya.CV.Modelo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Adya.CV.Modelo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bd\Actividades.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\ActividadesxHojadeVida.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Areas.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\AreasxHojadeVida.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Cargos.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Ciudades.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Conocimientos.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\DetalleIngresos.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Educaciones.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Empleados.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\EstudioActuales.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\ExperienciaLaborales.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\HojadeVidas.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\InformacionFamiliares.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Ingresos.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Menu.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Menus.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\MenusxUsuario.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Modelo.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Modelo.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Modelo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Modelo.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Modelo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Nacionalidades.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Productos.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\ProductosxEmpleados.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\ProductosxTallas.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Profesiones.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Proveedores.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\ReferenciaPersonales.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\SeguridadesSociales.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Tallas.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\TallasxEmpleados.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bd\Usuarios.vb">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BL\HojadeVida\ActividadesBL.vb" />
+    <Compile Include="BL\HojadeVida\ActividadesxHojadeVidaBL.vb" />
+    <Compile Include="BL\HojadeVida\AreasBL.vb" />
+    <Compile Include="BL\HojadeVida\AreasxHojadeVidaBL.vb" />
+    <Compile Include="BL\HojadeVida\CargosBL.vb" />
+    <Compile Include="BL\HojadeVida\ConocimientosBL.vb" />
+    <Compile Include="BL\HojadeVida\CuidadesBL.vb" />
+    <Compile Include="BL\HojadeVida\EducacionesBL.vb" />
+    <Compile Include="BL\HojadeVida\EstudioActualesBL.vb" />
+    <Compile Include="BL\HojadeVida\ExperienciaLaboralesBL.vb" />
+    <Compile Include="BL\HojadeVida\HojadeVidasBL.vb" />
+    <Compile Include="BL\HojadeVida\InformacionFamiliaresBL.vb" />
+    <Compile Include="BL\Inventario\TallasBL.vb" />
+    <Compile Include="BL\Seguridad\MenusBL.vb" />
+    <Compile Include="BL\Seguridad\MenusxUsuarioBL.vb" />
+    <Compile Include="BL\HojadeVida\NacionalidadesBL.vb" />
+    <Compile Include="BL\HojadeVida\ProfesionesBL.vb" />
+    <Compile Include="BL\HojadeVida\ReferenciaPersonalesBL.vb" />
+    <Compile Include="BL\HojadeVida\SeguridadesSocialesBL.vb" />
+    <Compile Include="BL\Seguridad\UsuariosBL.vb" />
+    <Compile Include="Dao\HojadeVida\ActividadesDao.vb" />
+    <Compile Include="Dao\HojadeVida\ActividadesxHojadeVidaDao.vb" />
+    <Compile Include="Dao\HojadeVida\AreasDao.vb" />
+    <Compile Include="Dao\HojadeVida\AreasxHojadeVidaDao.vb" />
+    <Compile Include="Dao\HojadeVida\CargosDao.vb" />
+    <Compile Include="Dao\HojadeVida\CiudadesDao.vb" />
+    <Compile Include="Dao\HojadeVida\ConocimientosDao.vb" />
+    <Compile Include="Dao\HojadeVida\EducacionesDao.vb" />
+    <Compile Include="Dao\HojadeVida\EstudioActualesDao.vb" />
+    <Compile Include="Dao\HojadeVida\ExperienciaLaboralesDao.vb" />
+    <Compile Include="Dao\HojadeVida\HojadeVidasDao.vb" />
+    <Compile Include="Dao\HojadeVida\InformacionFamiliaresDao.vb" />
+    <Compile Include="Dao\Inventario\TallasDao.vb" />
+    <Compile Include="Dao\Seguridad\MenusDao.vb" />
+    <Compile Include="Dao\Seguridad\MenusxUsuarioDao.vb" />
+    <Compile Include="Dao\HojadeVida\NacionalidadesDao.vb" />
+    <Compile Include="Dao\HojadeVida\ProfesionesDao.vb" />
+    <Compile Include="Dao\HojadeVida\ReferenciaPersonalesDao.vb" />
+    <Compile Include="Dao\HojadeVida\SeguridadesSocialesDao.vb" />
+    <Compile Include="Dao\Seguridad\UsuariosDao.vb" />
+    <Compile Include="Facade\HojadeVidaFacade.vb" />
+    <Compile Include="Facade\InventarioFacade.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SessionManager.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Bd\Modelo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Modelo.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Bd\Modelo.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Modelo.edmx</DependentUpon>
+      <LastGenOutput>Modelo.Context.vb</LastGenOutput>
+    </None>
+    <None Include="Bd\Modelo.edmx.diagram">
+      <DependentUpon>Modelo.edmx</DependentUpon>
+    </None>
+    <None Include="Bd\Modelo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Modelo.edmx</DependentUpon>
+      <LastGenOutput>Modelo.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

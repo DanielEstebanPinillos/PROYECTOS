@@ -1,0 +1,92 @@
+﻿  .cien {
+      width: 100%;
+    }
+
+    .noventa {
+      width: 90%;
+    }
+
+   .ochenta {
+      width: 80%;
+    }
+
+   .setenta {
+      width: 70%;
+    }
+
+    .cincuenta {
+      width: 50%;
+    }
+
+    .treintaytres{
+       width:33%;
+    }
+
+    .treinta {
+      width: 30%;
+    }
+
+    .veinticuatro {
+      width: 24%;
+    }
+
+    .veinte {
+      width: 20%;
+    }
+
+    .dieciocho {
+      width: 18%;
+    }
+
+    .quince {
+      width: 15%;
+    }
+
+    .doceymedio{
+      width: 12.5%;
+    }
+
+    .nueve {
+      width: 9%;
+    }
+
+    .cinco {
+      width: 5%;
+    }
+
+    .dos {
+      width: 2%;
+    }
+
+    
+    .link_button {
+      margin-left: 1%;
+      color: white; 
+      font-size: large;
+      width: 20px;
+      height: 20px;
+      padding:2%;
+    }
+
+    .link_button:hover {
+      color: #005490;
+      background-color: #ffffff;
+      border-radius:10%;
+      padding:2%;
+    }
+
+    .link_button_select:hover {
+      color:white ;
+      background-color: #005490 ;
+      border-radius:10%;
+    }
+
+    .alinear_der{
+      text-align:right;
+      margin-right:10px;
+      padding-right:10px;
+    }
+
+    .form-control{
+      padding:2%;
+    }

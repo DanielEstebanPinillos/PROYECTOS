@@ -1,0 +1,83 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="_Plantilla.Master.vb" Inherits="Adya.CV.Web._Plantilla" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>CV - Curriculum Vitale</title>
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/font-awesome.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/diseno_app.css" rel="stylesheet" />
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <form id="form1" runat="server">
+    <div>
+      <asp:UpdatePanel ID="udp_base" runat="server">
+        <ContentTemplate>
+          <table class="cien">
+            <tr class="bg-primary">
+              <td class="cien">
+                <table class="cien">
+                  <tr>
+                    <td class="dieciocho">
+                      <asp:ContentPlaceHolder ID="cph_botones" runat="server">
+                      </asp:ContentPlaceHolder>
+                    </td>
+                    <td class="ochenta">
+                      <nav id="menu" class="navbar navbar-inverse" role="navigation">
+                        <div class="navbar-header">
+                          <button id="nav-toggle" class="navbar-toggle" data-target="#main-nav" data-toggle="collapse" type="button">
+                            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <div id="main-nav" class="collapse navbar-collapse navStyle">
+                          <ul id="mainNav" class="nav navbar-nav" runat="server">
+                          </ul>
+                        </div>
+                      </nav>
+                    </td>
+                    <td class="dos">
+                      <asp:LinkButton ID="lkb_cerrarsesion" CssClass="link_button" runat="server"><span class="fa fa-sign-out"></span></asp:LinkButton>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="cien">
+                <br />
+                <div id="div_mensajes" runat="server">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <asp:ContentPlaceHolder ID="cph_contenido" runat="server">
+                </asp:ContentPlaceHolder>
+              </td>
+            </tr>
+            <tr>
+              <td class="cien text-center">Powered by Devpoint 2015 Todos los derechos reservados</td>
+            </tr>
+          </table>
+          <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        </ContentTemplate>
+      </asp:UpdatePanel>
+    </div>
+  </form>
+</body>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+  })
+</script>
+</html>

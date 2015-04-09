@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cc77561bd7ba4083b98abdbd804e9a01" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="CVModel.Actividades" Width="1.5" PointX="6" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.ActividadesxHojadeVida" Width="1.5" PointX="8.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.Areas" Width="1.5" PointX="9" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.AreasxHojadeVida" Width="1.5" PointX="11.25" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.Cargos" Width="1.5" PointX="3.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.Ciudades" Width="1.5" PointX="0.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.Conocimientos" Width="1.5" PointX="8.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.Educaciones" Width="1.5" PointX="3" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.EstudioActuales" Width="1.5" PointX="8.25" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.ExperienciaLaborales" Width="1.5" PointX="11.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.InformacionFamiliares" Width="1.5" PointX="11.25" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.Nacionalidades" Width="1.5" PointX="3.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.Profesiones" Width="1.5" PointX="3.75" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.ReferenciaPersonales" Width="1.5" PointX="8.25" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.SeguridadesSociales" Width="1.5" PointX="8.25" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CVModel.Usuarios" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="CVModel.FK_ActividadesxHojadeVida_Actividades" ManuallyRouted="false" />
+        <AssociationConnector Association="CVModel.FK_AreasxHojadeVida_Areas" ManuallyRouted="false" />
+        <AssociationConnector Association="CVModel.FK_ExperienciaLaborales_Cargos" ManuallyRouted="false" />
+        <AssociationConnector Association="CVModel.FK_ExperienciaLaborales_JefeCargos" ManuallyRouted="false" />
+        <AssociationConnector Association="CVModel.FK_InformacionFamiliares_Cargos" ManuallyRouted="false" />
+        <AssociationConnector Association="CVModel.FK_Educaciones_Ciudades" ManuallyRouted="false" />
+        <AssociationConnector Association="CVModel.FK_InformacionFamiliares_Ciudades" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CVModel.MenusxUsuario" Width="1.5" PointX="5" PointY="0.875" />
+        <AssociationConnector Association="CVModel.FK_MenusxUsuario_Usuarios" />
+        <EntityTypeShape EntityType="CVModel.Menus" Width="1.5" PointX="0.75" PointY="4.875" />
+        <AssociationConnector Association="CVModel.FK_MenusxUsuario_Menus" />
+        <EntityTypeShape EntityType="CVModel.HojadeVidas" Width="1.5" PointX="6" PointY="12.5" />
+        <AssociationConnector Association="CVModel.FK_ActividadesxHojadeVida_HojadeVidas" />
+        <AssociationConnector Association="CVModel.FK_AreasxHojadeVida_HojadeVidas" />
+        <AssociationConnector Association="CVModel.FK_HojadeVidas_Cargos" />
+        <AssociationConnector Association="CVModel.FK_HojadeVidas_Ciudades" />
+        <AssociationConnector Association="CVModel.FK_HojadeVidas_ExpedicionCiudades" />
+        <AssociationConnector Association="CVModel.FK_HojadeVidas_VividoCiudades" />
+        <AssociationConnector Association="CVModel.FK_Conocimientos_HojadeVidas" />
+        <AssociationConnector Association="CVModel.FK_Educaciones_HojadeVidas" />
+        <AssociationConnector Association="CVModel.FK_EstudioActuales_HojadeVidas" />
+        <AssociationConnector Association="CVModel.FK_ExperienciaLaborales_HojadeVidas" />
+        <AssociationConnector Association="CVModel.FK_HojadeVidas_Nacionalidades" />
+        <AssociationConnector Association="CVModel.FK_HojadeVidas_Profesiones" />
+        <AssociationConnector Association="CVModel.FK_InformacionFamiliares_HojadeVidas" />
+        <AssociationConnector Association="CVModel.FK_ReferenciaPersonales_HojadeVidas" />
+        <AssociationConnector Association="CVModel.FK_SeguridadesSociales_HojadeVidas" />
+        <EntityTypeShape EntityType="CVModel.DetalleIngresos" Width="1.5" PointX="13.625" PointY="4.625" />
+        <EntityTypeShape EntityType="CVModel.Empleados" Width="1.5" PointX="13.625" PointY="0.75" />
+        <EntityTypeShape EntityType="CVModel.Ingresos" Width="1.5" PointX="11.375" PointY="9" />
+        <EntityTypeShape EntityType="CVModel.Productos" Width="1.5" PointX="8.375" PointY="1.875" />
+        <EntityTypeShape EntityType="CVModel.ProductosxEmpleados" Width="1.5" PointX="15.875" PointY="4.5" />
+        <EntityTypeShape EntityType="CVModel.ProductosxTallas" Width="1.5" PointX="10.625" PointY="4.75" />
+        <EntityTypeShape EntityType="CVModel.Proveedores" Width="1.5" PointX="9.125" PointY="8.875" />
+        <EntityTypeShape EntityType="CVModel.Tallas" Width="1.5" PointX="8.375" PointY="5" />
+        <EntityTypeShape EntityType="CVModel.TallasxEmpleados" Width="1.5" PointX="10.625" PointY="1.875" />
+        <AssociationConnector Association="CVModel.FK_DetalleIngresos_Ingresos" />
+        <AssociationConnector Association="CVModel.FK_DetalleIngresos_Productos" />
+        <AssociationConnector Association="CVModel.FK_DetalleIngresos_Tallas" />
+        <AssociationConnector Association="CVModel.FK_ProductosxEmpleados_Empleados" />
+        <AssociationConnector Association="CVModel.FK_TallasxEmpleados_Empleados" />
+        <AssociationConnector Association="CVModel.FK_Ingresos_Proveedores" />
+        <AssociationConnector Association="CVModel.FK_ProductosxTallas_Productos" />
+        <AssociationConnector Association="CVModel.FK_TallasxEmpleados_Productos" />
+        <AssociationConnector Association="CVModel.FK_ProductosxEmpleados_ProductosxTallas" />
+        <AssociationConnector Association="CVModel.FK_ProductosxTallas_Tallas" />
+        <AssociationConnector Association="CVModel.FK_TallasxEmpleados_Tallas" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

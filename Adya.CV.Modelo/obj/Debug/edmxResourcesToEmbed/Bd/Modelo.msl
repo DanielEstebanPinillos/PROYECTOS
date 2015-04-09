@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CVModelStoreContainer" CdmEntityContainer="CVEntities">
+    <EntitySetMapping Name="Actividades">
+      <EntityTypeMapping TypeName="CVModel.Actividades">
+        <MappingFragment StoreEntitySet="Actividades">
+          <ScalarProperty Name="ActividadId" ColumnName="ActividadId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActividadesxHojadeVida">
+      <EntityTypeMapping TypeName="CVModel.ActividadesxHojadeVida">
+        <MappingFragment StoreEntitySet="ActividadesxHojadeVida">
+          <ScalarProperty Name="ActividadxHojadeVida" ColumnName="ActividadxHojadeVida" />
+          <ScalarProperty Name="HojadeVidaFk" ColumnName="HojadeVidaFk" />
+          <ScalarProperty Name="ActividadFk" ColumnName="ActividadFk" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Areas">
+      <EntityTypeMapping TypeName="CVModel.Areas">
+        <MappingFragment StoreEntitySet="Areas">
+          <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AreasxHojadeVida">
+      <EntityTypeMapping TypeName="CVModel.AreasxHojadeVida">
+        <MappingFragment StoreEntitySet="AreasxHojadeVida">
+          <ScalarProperty Name="AreaxHojadeVidaId" ColumnName="AreaxHojadeVidaId" />
+          <ScalarProperty Name="HojadeVidaFk" ColumnName="HojadeVidaFk" />
+          <ScalarProperty Name="AreaFk" ColumnName="AreaFk" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargos">
+      <EntityTypeMapping TypeName="CVModel.Cargos">
+        <MappingFragment StoreEntitySet="Cargos">
+          <ScalarProperty Name="CargoId" ColumnName="CargoId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ciudades">
+      <EntityTypeMapping TypeName="CVModel.Ciudades">
+        <MappingFragment StoreEntitySet="Ciudades">
+          <ScalarProperty Name="CiudadId" ColumnName="CiudadId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conocimientos">
+      <EntityTypeMapping TypeName="CVModel.Conocimientos">
+        <MappingFragment StoreEntitySet="Conocimientos">
+          <ScalarProperty Name="ConocimientoId" ColumnName="ConocimientoId" />
+          <ScalarProperty Name="HojadeVidaFk" ColumnName="HojadeVidaFk" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="SistemasNivel" ColumnName="SistemasNivel" />
+          <ScalarProperty Name="InglesLectura" ColumnName="InglesLectura" />
+          <ScalarProperty Name="InglesEscucha" ColumnName="InglesEscucha" />
+          <ScalarProperty Name="InglesHablado" ColumnName="InglesHablado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Educaciones">
+      <EntityTypeMapping TypeName="CVModel.Educaciones">
+        <MappingFragment StoreEntitySet="Educaciones">
+          <ScalarProperty Name="EducacionId" ColumnName="EducacionId" />
+          <ScalarProperty Name="HojadeVidaFk" ColumnName="HojadeVidaFk" />
+          <ScalarProperty Name="Estudio" ColumnName="Estudio" />
+          <ScalarProperty Name="AnoFin" ColumnName="AnoFin" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Institucion" ColumnName="Institucion" />
+          <ScalarProperty Name="CiudadFk" ColumnName="CiudadFk" />
+          <ScalarProperty Name="TiempoCursado" ColumnName="TiempoCursado" />
+          <ScalarProperty Name="TipoTiempo" ColumnName="TipoTiempo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstudioActuales">
+      <EntityTypeMapping TypeName="CVModel.EstudioActuales">
+        <MappingFragment StoreEntitySet="EstudioActuales">
+          <ScalarProperty Name="EducacionId" ColumnName="EducacionId" />
+          <ScalarProperty Name="HojadeVidaFk" ColumnName="HojadeVidaFk" />
+          <ScalarProperty Name="Estudio" ColumnName="Estudio" />
+          <ScalarProperty Name="TiempoCurso" ColumnName="TiempoCurso" />
+          <ScalarProperty Name="TipoTiempo" ColumnName="TipoTiempo" />
+          <ScalarProperty Name="Institucion" ColumnName="Institucion" />
+          <ScalarProperty Name="Horaria" ColumnName="Horaria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExperienciaLaborales">
+      <EntityTypeMapping TypeName="CVModel.ExperienciaLaborales">
+        <MappingFragment StoreEntitySet="ExperienciaLaborales">
+          <ScalarProperty Name="ExperienciaLaboralId" ColumnName="ExperienciaLaboralId" />
+          <ScalarProperty Name="HojadeVidaFk" ColumnName="HojadeVidaFk" />
+          <ScalarProperty Name="Empresa" ColumnName="Empresa" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="JefeCargoFk" ColumnName="JefeCargoFk" />
+          <ScalarProperty Name="JefeInmediato" ColumnName="JefeInmediato" />
+          <ScalarProperty Name="Ingreso" ColumnName="Ingreso" />
+          <ScalarProperty Name="Retiro" ColumnName="Retiro" />
+          <ScalarProperty Name="TiempoServicio" ColumnName="TiempoServicio" />
+          <ScalarProperty Name="SueldoInicial" ColumnName="SueldoInicial" />
+          <ScalarProperty Name="SueldoFinal" ColumnName="SueldoFinal" />
+          <ScalarProperty Name="CargoFk" ColumnName="CargoFk" />
+          <ScalarProperty Name="Funciones" ColumnName="Funciones" />
+          <ScalarProperty Name="Logros" ColumnName="Logros" />
+          <ScalarProperty Name="TipoContrato" ColumnName="TipoContrato" />
+          <ScalarProperty Name="HorarioTrabajo" ColumnName="HorarioTrabajo" />
+          <ScalarProperty Name="Jornada" ColumnName="Jornada" />
+          <ScalarProperty Name="MotivoRetiro" ColumnName="MotivoRetiro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InformacionFamiliares">
+      <EntityTypeMapping TypeName="CVModel.InformacionFamiliares">
+        <MappingFragment StoreEntitySet="InformacionFamiliares">
+          <ScalarProperty Name="InformacionFamiliarId" ColumnName="InformacionFamiliarId" />
+          <ScalarProperty Name="HojadeVidaFk" ColumnName="HojadeVidaFk" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ProfesionFk" ColumnName="ProfesionFk" />
+          <ScalarProperty Name="Empresa" ColumnName="Empresa" />
+          <ScalarProperty Name="CargoFk" ColumnName="CargoFk" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="CiudadFk" ColumnName="CiudadFk" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Parentesco" ColumnName="Parentesco" />
+          <ScalarProperty Name="OtroParentesco" ColumnName="OtroParentesco" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nacionalidades">
+      <EntityTypeMapping TypeName="CVModel.Nacionalidades">
+        <MappingFragment StoreEntitySet="Nacionalidades">
+          <ScalarProperty Name="NacionalidadId" ColumnName="NacionalidadId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profesiones">
+      <EntityTypeMapping TypeName="CVModel.Profesiones">
+        <MappingFragment StoreEntitySet="Profesiones">
+          <ScalarProperty Name="ProfesionId" ColumnName="ProfesionId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenciaPersonales">
+      <EntityTypeMapping TypeName="CVModel.ReferenciaPersonales">
+        <MappingFragment StoreEntitySet="ReferenciaPersonales">
+          <ScalarProperty Name="ReferenciaPersonalId" ColumnName="ReferenciaPersonalId" />
+          <ScalarProperty Name="HojadeVidaFk" ColumnName="HojadeVidaFk" />
+          <ScalarProperty Name="Familiar" ColumnName="Familiar" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="CargoFk" ColumnName="CargoFk" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeguridadesSociales">
+      <EntityTypeMapping TypeName="CVModel.SeguridadesSociales">
+        <MappingFragment StoreEntitySet="SeguridadesSociales">
+          <ScalarProperty Name="SeguridadSocialId" ColumnName="SeguridadSocialId" />
+          <ScalarProperty Name="HojadeVidaFk" ColumnName="HojadeVidaFk" />
+          <ScalarProperty Name="Eps" ColumnName="Eps" />
+          <ScalarProperty Name="NombreEPS" ColumnName="NombreEPS" />
+          <ScalarProperty Name="FechaEPS" ColumnName="FechaEPS" />
+          <ScalarProperty Name="TipoAfilidado" ColumnName="TipoAfilidado" />
+          <ScalarProperty Name="Pensiones" ColumnName="Pensiones" />
+          <ScalarProperty Name="NombrePEN" ColumnName="NombrePEN" />
+          <ScalarProperty Name="FechaPEN" ColumnName="FechaPEN" />
+          <ScalarProperty Name="Cesantias" ColumnName="Cesantias" />
+          <ScalarProperty Name="NombreCES" ColumnName="NombreCES" />
+          <ScalarProperty Name="FechaCES" ColumnName="FechaCES" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="CVModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="Administrador" ColumnName="Administrador" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenusxUsuario">
+      <EntityTypeMapping TypeName="CVModel.MenusxUsuario">
+        <MappingFragment StoreEntitySet="MenusxUsuario">
+          <ScalarProperty Name="MenuFk" ColumnName="MenuFk" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="UsuarioFk" ColumnName="UsuarioFk" />
+          <ScalarProperty Name="MenuxUsuarioId" ColumnName="MenuxUsuarioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="CVModel.Menus">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HojadeVidas">
+      <EntityTypeMapping TypeName="CVModel.HojadeVidas">
+        <MappingFragment StoreEntitySet="HojadeVidas">
+          <ScalarProperty Name="NumeroPersonasDependen" ColumnName="NumeroPersonasDependen" />
+          <ScalarProperty Name="Objetivo" ColumnName="Objetivo" />
+          <ScalarProperty Name="DescripcionAsociacion" ColumnName="DescripcionAsociacion" />
+          <ScalarProperty Name="Asociacion" ColumnName="Asociacion" />
+          <ScalarProperty Name="DescripcionMenciones" ColumnName="DescripcionMenciones" />
+          <ScalarProperty Name="Menciones" ColumnName="Menciones" />
+          <ScalarProperty Name="Deportes" ColumnName="Deportes" />
+          <ScalarProperty Name="PrincipalesAficiones" ColumnName="PrincipalesAficiones" />
+          <ScalarProperty Name="AspiracionSalarial" ColumnName="AspiracionSalarial" />
+          <ScalarProperty Name="ConceptoObligacionMensual" ColumnName="ConceptoObligacionMensual" />
+          <ScalarProperty Name="ValorObligacionMensual" ColumnName="ValorObligacionMensual" />
+          <ScalarProperty Name="ValorIngresoAdicional" ColumnName="ValorIngresoAdicional" />
+          <ScalarProperty Name="DescripcionIngresoAdicional" ColumnName="DescripcionIngresoAdicional" />
+          <ScalarProperty Name="IngresoAdicional" ColumnName="IngresoAdicional" />
+          <ScalarProperty Name="MesesResidencia" ColumnName="MesesResidencia" />
+          <ScalarProperty Name="AnosResidencia" ColumnName="AnosResidencia" />
+          <ScalarProperty Name="TelefonoArreandador" ColumnName="TelefonoArreandador" />
+          <ScalarProperty Name="NombreArrendador" ColumnName="NombreArrendador" />
+          <ScalarProperty Name="ViveCasa" ColumnName="ViveCasa" />
+          <ScalarProperty Name="TrabajarOtraCiudad" ColumnName="TrabajarOtraCiudad" />
+          <ScalarProperty Name="VividoCiudadFk" ColumnName="VividoCiudadFk" />
+          <ScalarProperty Name="ConocioOtro" ColumnName="ConocioOtro" />
+          <ScalarProperty Name="ConocioVacante" ColumnName="ConocioVacante" />
+          <ScalarProperty Name="Dependencia" ColumnName="Dependencia" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Recomendado" ColumnName="Recomendado" />
+          <ScalarProperty Name="SolicitoAntesFechaEstaEmpresa" ColumnName="SolicitoAntesFechaEstaEmpresa" />
+          <ScalarProperty Name="SolicitoAntesEstaEmpresa" ColumnName="SolicitoAntesEstaEmpresa" />
+          <ScalarProperty Name="TrabajoAntesEstaEmpresa" ColumnName="TrabajoAntesEstaEmpresa" />
+          <ScalarProperty Name="TipoContrato" ColumnName="TipoContrato" />
+          <ScalarProperty Name="Independiente" ColumnName="Independiente" />
+          <ScalarProperty Name="Empresa" ColumnName="Empresa" />
+          <ScalarProperty Name="TrabajaActualmente" ColumnName="TrabajaActualmente" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="LicenciaConduccion" ColumnName="LicenciaConduccion" />
+          <ScalarProperty Name="Vehiculo" ColumnName="Vehiculo" />
+          <ScalarProperty Name="TarjetaProfesional" ColumnName="TarjetaProfesional" />
+          <ScalarProperty Name="Clase" ColumnName="Clase" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="LibretaMilitar" ColumnName="LibretaMilitar" />
+          <ScalarProperty Name="ExpedicionCiudadFk" ColumnName="ExpedicionCiudadFk" />
+          <ScalarProperty Name="NumeroIdentificacion" ColumnName="NumeroIdentificacion" />
+          <ScalarProperty Name="TipoDocumento" ColumnName="TipoDocumento" />
+          <ScalarProperty Name="MesesExperiencia" ColumnName="MesesExperiencia" />
+          <ScalarProperty Name="AnosExperiencia" ColumnName="AnosExperiencia" />
+          <ScalarProperty Name="EstadoCivil" ColumnName="EstadoCivil" />
+          <ScalarProperty Name="ProfesionFk" ColumnName="ProfesionFk" />
+          <ScalarProperty Name="NacionalidadFk" ColumnName="NacionalidadFk" />
+          <ScalarProperty Name="CiudadFk" ColumnName="CiudadFk" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="CargoFk" ColumnName="CargoFk" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="HojadeVidaId" ColumnName="HojadeVidaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleIngresos">
+      <EntityTypeMapping TypeName="CVModel.DetalleIngresos">
+        <MappingFragment StoreEntitySet="DetalleIngresos">
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="TallaFk" ColumnName="TallaFk" />
+          <ScalarProperty Name="ProductoFk" ColumnName="ProductoFk" />
+          <ScalarProperty Name="IngresoFk" ColumnName="IngresoFk" />
+          <ScalarProperty Name="DetalleIngresoId" ColumnName="DetalleIngresoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleados">
+      <EntityTypeMapping TypeName="CVModel.Empleados">
+        <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="NumeroIdentificacion" ColumnName="NumeroIdentificacion" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ingresos">
+      <EntityTypeMapping TypeName="CVModel.Ingresos">
+        <MappingFragment StoreEntitySet="Ingresos">
+          <ScalarProperty Name="ProveedorFk" ColumnName="ProveedorFk" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="IngresoId" ColumnName="IngresoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productos">
+      <EntityTypeMapping TypeName="CVModel.Productos">
+        <MappingFragment StoreEntitySet="Productos">
+          <ScalarProperty Name="CantidadActual" ColumnName="CantidadActual" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductosxEmpleados">
+      <EntityTypeMapping TypeName="CVModel.ProductosxEmpleados">
+        <MappingFragment StoreEntitySet="ProductosxEmpleados">
+          <ScalarProperty Name="TipoDevolucion" ColumnName="TipoDevolucion" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="ProductoxTallaFk" ColumnName="ProductoxTallaFk" />
+          <ScalarProperty Name="EmpleadoFk" ColumnName="EmpleadoFk" />
+          <ScalarProperty Name="ProductoxEmpleadoId" ColumnName="ProductoxEmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductosxTallas">
+      <EntityTypeMapping TypeName="CVModel.ProductosxTallas">
+        <MappingFragment StoreEntitySet="ProductosxTallas">
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="TallaFk" ColumnName="TallaFk" />
+          <ScalarProperty Name="ProductoFk" ColumnName="ProductoFk" />
+          <ScalarProperty Name="ProductoxTallaId" ColumnName="ProductoxTallaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedores">
+      <EntityTypeMapping TypeName="CVModel.Proveedores">
+        <MappingFragment StoreEntitySet="Proveedores">
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NumeroIdentificacion" ColumnName="NumeroIdentificacion" />
+          <ScalarProperty Name="ProveedorId" ColumnName="ProveedorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tallas">
+      <EntityTypeMapping TypeName="CVModel.Tallas">
+        <MappingFragment StoreEntitySet="Tallas">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="TallaId" ColumnName="TallaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TallasxEmpleados">
+      <EntityTypeMapping TypeName="CVModel.TallasxEmpleados">
+        <MappingFragment StoreEntitySet="TallasxEmpleados">
+          <ScalarProperty Name="TallaFk" ColumnName="TallaFk" />
+          <ScalarProperty Name="ProductoFk" ColumnName="ProductoFk" />
+          <ScalarProperty Name="EmpleadoFk" ColumnName="EmpleadoFk" />
+          <ScalarProperty Name="TallaxEmpleadoId" ColumnName="TallaxEmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
