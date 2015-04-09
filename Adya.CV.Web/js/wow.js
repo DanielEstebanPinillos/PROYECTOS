@@ -42,6 +42,7 @@
       }
     };
 
+//teste github (delete me after this)
     WeakMap.prototype.set = function(key, value) {
       var i, item, _i, _len, _ref;
       _ref = this.keys;
