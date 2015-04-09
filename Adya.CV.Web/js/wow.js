@@ -1,4 +1,6 @@
-(function() {
+//hello world
+
+(function () {
   var MutationObserver, Util, WeakMap,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
@@ -42,6 +44,7 @@
       }
     };
 
+//teste github (delete me after this)
     WeakMap.prototype.set = function(key, value) {
       var i, item, _i, _len, _ref;
       _ref = this.keys;
